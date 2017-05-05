@@ -7,3 +7,4 @@ _benchdb_*
 *.sw*
 bulk2ssd_pop.config
 libpeerconnection.log
+need-leveldown.json

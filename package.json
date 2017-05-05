@@ -62,6 +62,8 @@
     "semver": false
   },
   "scripts": {
+    "prepublish": "node -p 'JSON.stringify(require(\"./package.json\").devDependencies.leveldown)' > need-leveldown.json",
+    "pretest": "npm run prepublish",
     "test": "tape test/*-test.js | faucet"
   },
   "license": "MIT"
